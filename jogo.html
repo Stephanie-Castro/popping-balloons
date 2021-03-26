@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+
+		<script src="jogo.js"></script>
+
+	</head>
+
+	<body onload="iniciaJogo()"> <!-- Chama a função que inicia o jogo assim que o "body" carrega -->
+		<!-- Contador de balões inteiros/não esotourados, contador de balões estourados e cronômetro -->
+		<div style="float: left; width: auto; height: 500px; background: #FFF; border: solid 1px #A2A2A2; margin-right: 5px;">
+
+			<table border="0"> <!-- Imagem do contador de balões inteiros e seu contador -->
+				<tr>
+					<td> 
+						<img src="imagens/balao_azul_grande.png">
+					</td>
+					<td>
+						<span id="total_baloes_inteiros" style="font-size: 40px;"></span> <!--  contador de balões inteiros -->
+					</td>
+				</tr>
+			</table>
+
+			<br>
+
+			<table border="0"> <!-- Imagem do contador de balões estourados e seu contador -->
+				<tr> <!-- A imagem que representa o contador de balões estourados e o seu contador propriamente dito ficam na mesma linha  -->
+					<td>
+						<img src="imagens/balao_azul_grande_estourado.png">
+					</td>
+					<td>
+						<span id="total_baloes_estourados" style="font-size: 40px;"></span> <!--  contador de balões estourados -->
+					</td>
+				</tr>
+			</table>
+
+			<br>
+
+			<table border="0" style="width: 140px; height: 132px;">  <!-- Imagem do cronômetro e o cronômetro em si -->
+				<tr>
+					<td style="background: url('imagens/cronometro.png'); text-align: center;"> <!-- Imagem que representa o contador sendo usada como background. -->
+						<span id="tempo_cronometro" style="color: red; font-size: 30px;"></span> <!-- Tempo do cronômetro-->
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+		<div id="cenario" style="float: left; width: 600px; height: 500px; background: url('imagens/cenario.png'); background-position: bottom;">  <!--  Div que tem como background o cenário do jogo -->	
+		</div>
+
+	</body>
+	
+</html>
